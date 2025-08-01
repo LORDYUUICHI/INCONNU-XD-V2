@@ -35,9 +35,8 @@ jobs:
     - name: Install FFmpeg
       run: sudo apt-get install -y ffmpeg
 
-    - name: Start application with timeout
-      run: |
-        timeout 21590s npm start  # Limite l'exécution à 5h 59m 50s
+    - name: Start application
+      run: npm start
 
     - name: Save state (Optional)
       run: |
