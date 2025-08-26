@@ -5,9 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name INCONNU-XD",
-    "stop": "pm2 stop INCONNU-XD",
-    "restart": "pm2 restart index.js --deep-monitoring --attach --name INCONNU-XD"
+  "start": "node index.js",
+  "start:pm2": "pm2 start index.js --deep-monitoring --attach --name INCONNU-XD",
+  "stop": "pm2 stop INCONNU-XD",
+  "restart": "pm2 restart INCONNU-XD"
   },
   "keywords": ["inconnu-boy", "whatsapp-bot", "whatsapp md bot"],
   "author": "INCONNU BOY",
